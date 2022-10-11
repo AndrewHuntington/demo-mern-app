@@ -46,7 +46,7 @@ const updateGoal = asyncHandler(async (req, res) => {
 });
 
 // @desc Delete goal
-// @route DELETE /api/goals
+// @route DELETE /api/goals/:id
 // @access Private
 const deleteGoal = asyncHandler(async (req, res) => {
   const goal = await Goal.findById(req.params.id);
